@@ -6,10 +6,14 @@
     <title>Garcia Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <script src="navigation.js" defer></script>
 </head>
 <body>
 
     <header>
+        <div class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
         <nav id="menu">
             <a href="#about">About Me</a>
             <a href="#projects">Projects</a>
@@ -50,7 +54,7 @@
                         <img src="Flork128.jpg" alt="Order Taker">
                     </div>
                     <div class="proj-title">
-                        <button class="modal-btn" data-title="Order Taker" data-description="A Java Program where it can accepts multiple orders and save it into a txt file." data-github="https://github.com/your-repo/order-taker">Order Taker</button>
+                        <button class="modal-btn" data-title="Order Taker" data-description="A Java Program where it can accepts multiple orders and save it into a txt file." data-github="https://github.com/TwistedHany/OrderTaker">Order Taker</button>
                     </div>
                 </div>
     
@@ -80,19 +84,31 @@
                         <button class="modal-btn" data-title="2nd Term Schedule Table" data-description="A scheduling tool for organizing term schedules using HTML tables" data-github="https://github.com/your-repo/schedule-table">2nd Term Schedule Table</button>
                     </div>
                 </div>
+
+                <div class="proj-item">
+                    <div class="proj-image">
+                        <img src="Florkkitkat.png" alt="2nd Term">
+                    </div>
+                    <div class="proj-title">
+                        <button class="modal-btn" data-title="Web Dev Project" data-description="A Personnel Management System applied in a website" data-github="https://github.com/TwistedHany/SecurityAgency2" data-docs="https://malayancollegesmindanaoo365-my.sharepoint.com/:w:/g/personal/fgarcia_mcm_edu_ph/ES1JLk2bPllCqRr28PDqYbwBrLXCLSRRWyKC07qdAXjQdA?e=imQjgK">Web Dev Project</button>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
     
-    <!-- Modal Structure -->
-    <div id="project-modal" class="modal">
-        <div class="modal-content">
-            <span class="close-btn">&times;</span>
-            <h2 id="modal-title"></h2>
-            <p id="modal-description"></p>
+<!-- Modal Structure -->
+<div id="project-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h2 id="modal-title"></h2>
+        <p id="modal-description"></p>
+        <div class="modal-buttons">
             <a id="modal-github" href="#" target="_blank" class="github-btn">View on GitHub</a>
+            <a id="modal-docs" href="#" target="_blank" class="docs-btn">View Documentation</a>
         </div>
     </div>
+</div>
 
 
     <section class="recognition" id="recognition">
@@ -114,6 +130,15 @@
                     </div>
                     <div class="recognition-title">
                         <h3>CSS (2024 - 2025) - Auditor</h3>
+                    </div>
+                </div>
+
+                <div class="recognition-item">
+                    <div class="recognition-image">
+                        <img src="codechumcert.jpg" alt="Recognition 2">
+                    </div>
+                    <div class="recognition-title">
+                        <h3>CodeChum Certification</h3>
                     </div>
                 </div>
             </div>
